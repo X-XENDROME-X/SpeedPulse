@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpeedPulse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="gradient-title">SpeedPulse</h1>
+        </header>
+
+        <main class="display-area">
+            <div id="start-button-container">
+                <button id="start-button" class="start-button">
+                    <span class="button-text">GO</span>
+                    <div class="button-glow"></div>
+                </button>
+            </div>
+
+            <div id="test-display" class="test-display">
+                <div class="readout-label">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/>
+                    </svg>
+                    <span id="phase-label">DOWNLOAD</span>
+                </div>
+                <div class="speed-value">
+                    <span id="speed-value-main">0.00</span>
+                    <span class="speed-unit">Mbps</span>
+                </div>
+                <canvas id="waveform-canvas"></canvas>
+                <div class="progress-indicator">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                    <div class="progress-controls">
+                        <div class="progress-text" id="progress-text">Initializing...</div>
+                        <button id="stop-button" class="stop-button hidden">
+                            <span>STOP TEST</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="results-footer">
+            <div class="result-box ping-box">
+                <div class="result-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22S19,14.25 19,9A7,7 0 0,0 12,2M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5Z"/>
+                    </svg>
+                </div>
+                <div class="result-content">
+                    <div class="result-label">Ping</div>
+                    <div class="result-value"><span id="ping-value">--</span> ms</div>
+                </div>
+            </div>
+            <div class="result-box jitter-box">
+                <div class="result-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M3,13H5V11H3M7,13H9V9H7M11,13H13V7H11M15,13H17V10H15M19,13H21V12H19V13Z"/>
+                    </svg>
+                </div>
+                <div class="result-content">
+                    <div class="result-label">Jitter</div>
+                    <div class="result-value"><span id="jitter-value">--</span> ms</div>
+                </div>
+            </div>
+            <div class="result-box download-box">
+                <div class="result-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M5,20H19V18H5M19,9H15V3H9V9H5L12,16L19,9Z"/>
+                    </svg>
+                </div>
+                <div class="result-content">
+                    <div class="result-label">Download</div>
+                    <div class="result-value"><span id="download-value">--</span> Mbps</div>
+                </div>
+            </div>
+            <div class="result-box upload-box">
+                <div class="result-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M9,16V10H5L12,3L19,10H15V16H9M5,20V18H19V20H5Z"/>
+                    </svg>
+                </div>
+                <div class="result-content">
+                    <div class="result-label">Upload</div>
+                    <div class="result-value"><span id="upload-value">--</span> Mbps</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
