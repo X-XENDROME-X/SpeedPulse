@@ -23,7 +23,7 @@ SpeedPulse is your personal network analyzer in Chrome! With cutting-edge wavefo
 ### 🎨 Modern Interface Excellence
 - **Sleek Dark Theme:** Stunning gradient-based design with smooth animations and visual feedback
 - **Live Progress Tracking:** Real-time indicators and phase-specific animations that keep you engaged
-- **Responsive Canvas Animations:** 60fps smooth waveform rendering with custom animation systems
+- **Responsive Canvas Animations:** Smooth waveform rendering with custom animation systems
 
 ### 📊 Advanced Network Analytics
 - **Multi-Server Architecture:** Automatic server selection with intelligent fallback systems
@@ -89,30 +89,3 @@ SpeedPulse is your personal network analyzer in Chrome! With cutting-edge wavefo
 - **Quick Restart:** Press 'R' when test is complete
 - **View Live Data:** Watch the waveform animation during testing
 - **Check Results:** All metrics display automatically after completion
-
-## 🎨 Design Philosophy
-
-SpeedPulse combines **accurate network diagnostics** with **modern web design**:
-
-- **Performance First:** Optimized for speed and accuracy in both testing and user interface
-- **Visual Excellence:** Real-time data visualization that's both beautiful and informative
-- **User Experience:** Intuitive interface that makes complex network data accessible to everyone
-- **Technical Precision:** Industry-standard testing methodologies in an elegant package
-
-## 🔬 Technical Deep Dive
-
-### Network Testing Engine
-1. **Server Discovery:** XML parsing of Speedtest.net server lists with geographic optimization
-2. **Download Phase:** Multi-threaded data streams with real-time progress calculation
-3. **Upload Phase:** Chunked upload with bandwidth measurement and progress tracking
-4. **Latency Analysis:** Statistical ping analysis with jitter computation and outlier removal
-
-### Performance Optimizations
-- **Canvas Rendering:** RequestAnimationFrame-based smooth 60fps waveform animations
-- **Memory Management:** Efficient cleanup and garbage collection strategies
-- **State Persistence:** Chrome storage API for seamless test recovery across sessions
-
-### Error Handling & Reliability
-- **Network Resilience:** Multiple server fallbacks and timeout management
-- **State Recovery:** Automatic test state restoration after service worker restarts
-- **User Feedback:** Clear error messages and recovery suggestions
