@@ -3,7 +3,7 @@
 </H1>
 
 <p align="center">
-  <img src="images/icon128.png" alt="SpeedPulse Logo" width="400"/>
+  <img src="icon128.png" alt="SpeedPulse Logo" width="400"/>
 </p>
 
 <p align="center">
