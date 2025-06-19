@@ -78,7 +78,7 @@ SpeedPulse is your personal network analyzer in Chrome! With cutting-edge wavefo
 ## 🚀 Installation & Quick Start
 
 ### Chrome Web Store (Recommended)
-1. Visit the [Chrome Web Store](link-to-store) 
+1. Visit the [Chrome Web Store](https://chromewebstore.google.com/detail/speedpulse/odmkmeadegfpefdeefmpomiknjfhjnmi)
 2. Click "Add to Chrome"
 3. Click the SpeedPulse icon in your toolbar
 4. Hit "GO" to start testing your connection!
@@ -116,11 +116,3 @@ SpeedPulse combines **accurate network diagnostics** with **modern web design**:
 - **Network Resilience:** Multiple server fallbacks and timeout management
 - **State Recovery:** Automatic test state restoration after service worker restarts
 - **User Feedback:** Clear error messages and recovery suggestions
-
-## 📈 Future Enhancements
-
-- **Historical Analytics:** Test result tracking with trend analysis and performance graphs
-- **Custom Server Configuration:** User-configurable speed test endpoints and preferences
-- **Advanced Diagnostics:** Detailed network analysis with bandwidth utilization charts
-- **Notification System:** Background test completion alerts and performance summaries
-- **Export Features:** CSV/JSON export for network performance reports
